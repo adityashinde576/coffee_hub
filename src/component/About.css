@@ -1,0 +1,68 @@
+/* About.css */
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #fdf6f0; /* light warm background */
+  font-family: 'Poppins', sans-serif;
+  gap: 40px;
+  flex-wrap: wrap; /* responsive wrap on smaller screens */
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #3e2723; /* dark coffee brown */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #5d4037; /* medium brown */
+  margin-bottom: 20px;
+}
+
+.about-content span {
+  color: #d2691e; /* chocolate accent */
+  font-weight: 600;
+}
+
+.learn-btn {
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6f4e37; /* rich coffee brown */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-btn:hover {
+  background-color: #8b5e3c; /* slightly lighter brown on hover */
+  transform: translateY(-3px);
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;             /* image takes full width of container */
+  max-width: 620px;        /* max width to avoid huge image */
+  height: 400px;           /* shorter height */
+  object-fit: cover;       /* crop to fit nicely */
+  border-radius: 20px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+

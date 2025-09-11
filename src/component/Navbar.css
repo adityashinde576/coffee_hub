@@ -1,0 +1,65 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b2e2e; /* Coffee dark brown */
+  padding: 15px 40px;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f5c518; /* Coffee yellow */
+  cursor: pointer;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #f5c518;
+  border-bottom: 2px solid #f5c518;
+  padding-bottom: 3px;
+}
+
+/* Buttons Container */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.order-btn {
+  background: #ff7043; /* Coffee orange */
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.order-btn:hover {
+  background: #f5c518; /* Yellow highlight */
+  color: #4b2e2e; /* Dark text */
+}
