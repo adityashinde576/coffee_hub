@@ -19,6 +19,7 @@ function Home() {
           alt="Coffee Cup"
         />
       </div>
+      
     </section>
   );
 }
