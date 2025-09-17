@@ -5,10 +5,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 80px 60px;
-  background-color: #fdf6f0; /* light warm background */
+  background: linear-gradient(90deg, #2e2e2e 60%, #3e2723 100%);
   font-family: 'Poppins', sans-serif;
   gap: 40px;
-  flex-wrap: wrap; /* responsive wrap on smaller screens */
+  flex-wrap: wrap;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
 }
 
 .about-content {
@@ -18,36 +24,41 @@
 
 .about-content h2 {
   font-size: 2.5rem;
-  color: #3e2723; /* dark coffee brown */
+  color: #d2a679;
   margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .about-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #5d4037; /* medium brown */
+  color: #f0e6d2;
   margin-bottom: 20px;
 }
 
 .about-content span {
-  color: #d2691e; /* chocolate accent */
-  font-weight: 600;
+  color: #ffcc80;
+  font-weight: 700;
+  font-size: 1.15rem;
 }
 
 .learn-btn {
   padding: 12px 30px;
   font-size: 1rem;
   color: #fff;
-  background-color: #6f4e37; /* rich coffee brown */
+  background: linear-gradient(90deg, #6f4e37 60%, #8b5e3c 100%);
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(111, 78, 55, 0.15);
+  transition: background 0.3s, transform 0.3s;
 }
 
 .learn-btn:hover {
-  background-color: #8b5e3c; /* slightly lighter brown on hover */
-  transform: translateY(-3px);
+  background: linear-gradient(90deg, #8b5e3c 60%, #d2a679 100%);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .about-image {
@@ -57,12 +68,30 @@
 }
 
 .about-image img {
-  width: 100%;             /* image takes full width of container */
-  max-width: 620px;        /* max width to avoid huge image */
-  height: 400px;           /* shorter height */
-  object-fit: cover;       /* crop to fit nicely */
+  width: 100%;
+  max-width: 620px;
+  height: 400px;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column;
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  .about-image img {
+    height: 220px;
+    max-width: 100%;
+  }
 }
 
 

@@ -1,7 +1,10 @@
 import React from "react";
 import "./About.css";
+import { useNavigate } from "react-router-dom";
 
 function About() {
+  const navigate = useNavigate();
+
   return (
     <section className="about" id="about">
       <div className="about-content">
@@ -18,13 +21,18 @@ function About() {
           Whether you're here for a quick espresso or a long conversation over
           cappuccino, CoffeeHub is your place to relax.
         </p>
-        <button className="learn-btn">Learn More</button>
+        <button
+          className="learn-btn"
+          onClick={() => navigate("/menu")}
+        >
+          Learn More
+        </button>
       </div>
 
       <div className="about-image">
         <img
           src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
-          alt="Coffee shop"
+          alt="Interior of CoffeeHub cafe with cozy ambiance"
         />
       </div>
     </section>
